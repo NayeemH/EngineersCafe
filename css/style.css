@@ -25,3 +25,7 @@ body{
   .copyrightSection p {
     margin: 0;
   }
+
+  .main_Content{
+    padding: 50px 0px;
+  }
