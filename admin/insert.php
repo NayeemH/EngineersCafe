@@ -14,12 +14,12 @@ error_reporting(0);
 </head>
 <body>
     <form action="" method="POST">
-        question <input type="text" name = "question" value=""/> <br><br>
-        option_a <input type="text" name = "option_a" value=""/> <br><br>
-        option_b <input type="text" name = "option_b" value=""/> <br><br>
-        option_c <input type="text" name = "option_c" value=""/> <br><br>
-        option_d <input type="text" name = "option_c" value=""/> <br><br>
-        answer <input type="text" name = "answer" value=""/> <br><br>
+        question <input type="text" name = "question" value="" required/> <br><br>
+        option_a <input type="text" name = "option_a" value="" required/> <br><br>
+        option_b <input type="text" name = "option_b" value="" required/> <br><br>
+        option_c <input type="text" name = "option_c" value="" required/> <br><br>
+        option_d <input type="text" name = "option_c" value="" required/> <br><br>
+        answer <input type="text" name = "answer" value="" required/> <br><br>
         <input type="submit" name="submit" value="Submit"/>
     </form>
 
@@ -32,18 +32,20 @@ error_reporting(0);
         $option_c =$_POST['option_c'];
         $option_d =$_POST['option_d'];
         $answer =$_POST['answer'];
+        
 
-        if ($question!="" && $option_a!= "" && $option_b!= "" && $option_c!= "" && $option_d!= ""  && $answer!= ""){
+        // if ($question!="" && $option_a!= "" && $option_b!= "" && $option_c!= "" && $option_d!= ""  && $answer!= ""){
+        //     echo ("data inserted succesfully");
             $query = "INSERT INTO question(question,option_a,option_b,option_c,option_d,answer) VALUES('$question','$option_a','$option_b','$option_c','$option_d','$answer')";
             $data = mysqli_query($conn,$query);
 
             if($data){
                 echo ("data inserted succesfully");
             }
-        }
-        else{
-            echo("all files required");
-        }
+        // }
+        // else{
+        //     echo("all files required");
+        // }
     }
         
     ?>
