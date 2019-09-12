@@ -14,6 +14,7 @@ error_reporting(0);
 </head>
 <body>
     <form action="" method="POST">
+        sector <input type="text" name = "sector" value="" required/> <br><br>
         question <input type="text" name = "question" value="" required/> <br><br>
         option_a <input type="text" name = "option_a" value="" required/> <br><br>
         option_b <input type="text" name = "option_b" value="" required/> <br><br>
@@ -26,6 +27,7 @@ error_reporting(0);
 
     <?php
     if($_POST['submit']){
+        $sector =$_POST['sector'];
         $question =$_POST['question'];
         $option_a =$_POST['option_a'];
         $option_b =$_POST['option_b'];
@@ -36,7 +38,7 @@ error_reporting(0);
 
         // if ($question!="" && $option_a!= "" && $option_b!= "" && $option_c!= "" && $option_d!= ""  && $answer!= ""){
         //     echo ("data inserted succesfully");
-            $query = "INSERT INTO question(question,option_a,option_b,option_c,option_d,answer) VALUES('$question','$option_a','$option_b','$option_c','$option_d','$answer')";
+            $query = "INSERT INTO question(sector,question,option_a,option_b,option_c,option_d,answer) VALUES('$sector','$question','$option_a','$option_b','$option_c','$option_d','$answer')";
             $data = mysqli_query($conn,$query);
 
             if($data){
