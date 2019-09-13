@@ -58,15 +58,15 @@
                                 Engineering Content
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="sub_content.html">Auto Mobile</a>
-                                <a class="dropdown-item" href="sub_content.html">Basic Mechanical Engineering</a>
-                                <a class="dropdown-item" href="sub_content.html">Thermodynamics</a>
-                                <a class="dropdown-item" href="sub_content.html">Hydraulic Machines</a>
-                                <a class="dropdown-item" href="sub_content.html">Fluid Mechanics</a>
-                                <a class="dropdown-item" href="sub_content.html">Compressors, Gas Turbines and Jet Engines</a>
-                                <a class="dropdown-item" href="sub_content.html">Machine Design</a>
-                                <a class="dropdown-item" href="sub_content.html">Engineering Mechanics</a>
-                                <a class="dropdown-item" href="sub_content.html">Others</a>
+                                <a class="dropdown-item" href="sub_content.php">Auto Mobile</a>
+                                <a class="dropdown-item" href="sub_content.php">Basic Mechanical Engineering</a>
+                                <a class="dropdown-item" href="sub_content.php">Thermodynamics</a>
+                                <a class="dropdown-item" href="sub_content.php">Hydraulic Machines</a>
+                                <a class="dropdown-item" href="sub_content.php">Fluid Mechanics</a>
+                                <a class="dropdown-item" href="sub_content.php">Compressors, Gas Turbines and Jet Engines</a>
+                                <a class="dropdown-item" href="sub_content.php">Machine Design</a>
+                                <a class="dropdown-item" href="sub_content.php">Engineering Mechanics</a>
+                                <a class="dropdown-item" href="sub_content.php">Others</a>
                                 <!-- <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a> -->
                             </div>
@@ -156,7 +156,7 @@
                             dignissimos necessitatibus fugit harum adipisci animi voluptas veritatis qui a optio, facere
                             quae officia officiis sunt architecto repellendus. Sunt ipsum dignissimos numquam laboriosam
                             facere neque a corporis quam tempore et aspernatur perspiciatis, autem aperiam dicta.</p>
-                        <!-- <button id="modal-btn" class="modal-button">Click Here</button> -->
+                        <button id="modal-btn" class="modal-button">Click Here</button>
 
                         <div id="my-modal" class="modal">
                             <div class="modal-content">

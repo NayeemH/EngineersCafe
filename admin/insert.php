@@ -1,6 +1,6 @@
 <?php 
 include("connection.php");
-error_reporting(0);
+error_reporting(1);
 ?>
 
 
@@ -19,7 +19,7 @@ error_reporting(0);
         option_a <input type="text" name = "option_a" value="" required/> <br><br>
         option_b <input type="text" name = "option_b" value="" required/> <br><br>
         option_c <input type="text" name = "option_c" value="" required/> <br><br>
-        option_d <input type="text" name = "option_c" value="" required/> <br><br>
+        option_d <input type="text" name = "option_d" value="" required/> <br><br>
         answer <input type="text" name = "answer" value="" required/> <br><br>
         <input type="submit" name="submit" value="Submit"/>
     </form>

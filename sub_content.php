@@ -1,3 +1,21 @@
+<?php 
+    $mysqli = new mysqli("localhost", "root", "", "engineers_cafe");
+    error_reporting(1);
+
+    /* check connection */
+    if (mysqli_connect_errno()) {
+        printf("Connect failed: %s\n", mysqli_connect_error());
+        exit();
+    }
+    else{
+        // echo "ok";
+    }
+
+    $query = "SELECT * FROM question ORDER BY question_id LIMIT 15 ";
+    $result = $mysqli->query($query);
+
+?>
+
 <html lang="en">
 
 <head>
@@ -58,15 +76,15 @@
                                 Engineering Content
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="sub_content.html">Auto Mobile</a>
-                                <a class="dropdown-item" href="sub_content.html">Basic Mechanical Engineering</a>
-                                <a class="dropdown-item" href="sub_content.html">Thermodynamics</a>
-                                <a class="dropdown-item" href="sub_content.html">Hydraulic Machines</a>
-                                <a class="dropdown-item" href="sub_content.html">Fluid Mechanics</a>
-                                <a class="dropdown-item" href="sub_content.html">Compressors, Gas Turbines and Jet Engines</a>
-                                <a class="dropdown-item" href="sub_content.html">Machine Design</a>
-                                <a class="dropdown-item" href="sub_content.html">Engineering Mechanics</a>
-                                <a class="dropdown-item" href="sub_content.html">Others</a>
+                                <a class="dropdown-item" href="sub_content.php">Auto Mobile</a>
+                                <a class="dropdown-item" href="sub_content.php">Basic Mechanical Engineering</a>
+                                <a class="dropdown-item" href="sub_content.php">Thermodynamics</a>
+                                <a class="dropdown-item" href="sub_content.php">Hydraulic Machines</a>
+                                <a class="dropdown-item" href="sub_content.php">Fluid Mechanics</a>
+                                <a class="dropdown-item" href="sub_content.php">Compressors, Gas Turbines and Jet Engines</a>
+                                <a class="dropdown-item" href="sub_content.php">Machine Design</a>
+                                <a class="dropdown-item" href="sub_content.php">Engineering Mechanics</a>
+                                <a class="dropdown-item" href="sub_content.php">Others</a>
                                 <!-- <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a> -->
                             </div>
@@ -147,53 +165,27 @@
                     </div>
                 </div>
 
+
+            <!-- fetching data from database -->
                 <div class="col-md-6">
                     <div class="question border border-success">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sed necessitatibus quidem
-                            dolorem dolores quo tenetur blanditiis, quas dicta quaerat dignissimos totam unde
-                            perspiciatis rem, itaque explicabo eaque voluptas sunt molestias distinctio, a minus atque
-                            hic repellat? Quidem placeat deleniti soluta dolorem cumque laboriosam cupiditate
-                            dignissimos necessitatibus fugit harum adipisci animi voluptas veritatis qui a optio, facere
-                            quae officia officiis sunt architecto repellendus. Sunt ipsum dignissimos numquam laboriosam
-                            facere neque a corporis quam tempore et aspernatur perspiciatis, autem aperiam dicta.</p>
-                        <button id="modal-btn" class="modal-button">Click Here</button>
-
-                        <div id="my-modal" class="modal">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <span class="close">&times;</span>
-                                    <h2>Modal Header</h2>
-                                </div>
-                                <div class="modal-body">
-                                    <p>This is my modal</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus nisi,
-                                        sunt consectetur ipsa velit
-                                        repudiandae aperiam modi quisquam nihil nam asperiores doloremque mollitia dolor
-                                        deleniti quibusdam nemo
-                                        commodi ab.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <h3>Modal Footer</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <table>
+                            <tr>
+                                <td>
+                                    <?php
+                                        while($row = $result->fetch_assoc())
+                                        {
+                                            echo $row['question_id'].'<br>';
+                                            echo $row['question'].'<br>';
+                                            echo $row['option_a'].'<br>';
+                                            echo $row['option_b'].'<br>';
+                                            echo $row['option_c'].'<br>';
+                                            echo $row['option_d'].'<br>';
+                                            echo $row['answer'].'<br>';
+                                        }
+                                    ?>
+                            </tr>
+                        </table>
                     </div>
                 </div>
 
