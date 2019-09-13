@@ -34,7 +34,7 @@
 
     <div class="content">
 
-        <!-- header area -->
+        <!-- header area start from here -->
         <div class="header">
             <div class="row">
                 <div class="col-md-3">
@@ -55,7 +55,7 @@
         <!-- navigation area -->
 
         <div class="navbar">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="#"><img src="img/E-3.png" class="rounded mx-auto d-block"
                         alt="EngineersCafe" width="50" height="50"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"

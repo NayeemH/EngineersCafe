@@ -1,6 +1,8 @@
 *, *::after, *::before{
   box-sizing: border-box;
 }
+
+
 body{
     background:rgb(137, 212, 235);
 }
@@ -31,6 +33,11 @@ body{
   .main_Content{
     padding: 50px 0px;
   }
+  .navbar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: all 0.5s;
+ }       
 
   /* .modal{
     position: fixed;
