@@ -11,7 +11,7 @@
         // echo "ok";
     }
 
-    $query = "SELECT * FROM question ORDER BY question_id LIMIT 15 ";
+    $query = "SELECT * FROM question WHERE sector = 'auto mobile' ORDER BY question_id LIMIT 15 ";
     $result = $mysqli->query($query);
 
 ?>

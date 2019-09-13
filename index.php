@@ -58,15 +58,15 @@
                                 Engineering Content
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="sub_content.php">Auto Mobile</a>
-                                <a class="dropdown-item" href="sub_content.php">Basic Mechanical Engineering</a>
-                                <a class="dropdown-item" href="sub_content.php">Thermodynamics</a>
-                                <a class="dropdown-item" href="sub_content.php">Hydraulic Machines</a>
-                                <a class="dropdown-item" href="sub_content.php">Fluid Mechanics</a>
-                                <a class="dropdown-item" href="sub_content.php">Compressors, Gas Turbines and Jet Engines</a>
-                                <a class="dropdown-item" href="sub_content.php">Machine Design</a>
-                                <a class="dropdown-item" href="sub_content.php">Engineering Mechanics</a>
-                                <a class="dropdown-item" href="sub_content.php">Others</a>
+                                <a class="dropdown-item" href="automobile.php">Auto Mobile</a>
+                                <a class="dropdown-item" href="me.php">Basic Mechanical Engineering</a>
+                                <a class="dropdown-item" href="tharmodynamics.php">Thermodynamics</a>
+                                <a class="dropdown-item" href="hydraulic.php">Hydraulic Machines</a>
+                                <a class="dropdown-item" href="fluid.php">Fluid Mechanics</a>
+                                <a class="dropdown-item" href="compressor.php">Compressors, Gas Turbines and Jet Engines</a>
+                                <a class="dropdown-item" href="machine.php">Machine Design</a>
+                                <a class="dropdown-item" href="mechanics.php">Engineering Mechanics</a>
+                                <a class="dropdown-item" href="Others.php">Others</a>
                                 <!-- <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a> -->
                             </div>
@@ -78,10 +78,10 @@
                                 Non-Technical Content
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">English</a>
-                                <a class="dropdown-item" href="#">Bangla</a>
-                                <a class="dropdown-item" href="#">General Knowledge</a>
-                                <a class="dropdown-item" href="#">Others</a>
+                                <a class="dropdown-item" href="english.php">English</a>
+                                <a class="dropdown-item" href="bangla.php">Bangla</a>
+                                <a class="dropdown-item" href="gk.php">General Knowledge</a>
+                                <a class="dropdown-item" href="others">Others</a>
                                 <!-- <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a> -->
                             </div>
