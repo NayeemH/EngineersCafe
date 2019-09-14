@@ -11,7 +11,7 @@
         // echo "ok";
     }
 
-    $query = "SELECT * FROM question WHERE sector = 'auto mobile' ORDER BY question_id LIMIT 15 ";
+    $query = "SELECT * FROM question WHERE sector = 'English' ORDER BY question_id LIMIT 15 ";
     $result = $mysqli->query($query);
 
 ?>
@@ -169,23 +169,35 @@
             <!-- fetching data from database -->
                 <div class="col-md-6">
                     <div class="question border border-success">
-                        <table>
-                            <tr>
-                                <td>
-                                    <?php
-                                        while($row = $result->fetch_assoc())
-                                        {
-                                            echo $row['question_id'].'<br>';
-                                            echo $row['question'].'<br>';
-                                            echo $row['option_a'].'<br>';
-                                            echo $row['option_b'].'<br>';
-                                            echo $row['option_c'].'<br>';
-                                            echo $row['option_d'].'<br>';
-                                            echo $row['answer'].'<br>';
-                                        }
-                                    ?>
-                            </tr>
-                        </table>
+                    <h3><a href="index.php">Home</a><a href="english.php">/English</a></h3>
+                        <?php
+                            while($row = $result->fetch_assoc())
+                            {
+                                
+                                //echo $row['question_id'].'<br>';
+                                echo '<br><h4>Question:: </h4>'.$row['question'].'<br>'; ?>
+                                <table class="table table-dark">
+                                    <tr>
+                                        <td>
+                                            <?php echo '<h6>Option A: </h6>'.$row['option_a']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo '<h6>Option B: </h6>'.$row['option_b']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo '<h6>Option C: </h6>'.$row['option_c']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo '<h6>Option D: </h6>'.$row['option_d']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo '<h6>Answer: </h6>'.$row['answer']; ?>
+                                        </td>
+                                    </tr>
+                                </table>
+                        <?php    
+                            }
+                        ?>
                     </div>
                 </div>
 

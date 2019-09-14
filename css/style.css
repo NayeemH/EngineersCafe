@@ -179,6 +179,7 @@ body{
     float: right;
     font-size: 30px;
     color: #fff;
+    float: left;
   }
   
   .close:hover,
