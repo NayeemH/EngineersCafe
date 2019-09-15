@@ -5,6 +5,10 @@
 
 body{
     background:rgb(137, 212, 235);
+    font-family: Arial, sans-serif;
+    background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 .content {
@@ -37,164 +41,106 @@ body{
     padding-top: 30px;
     padding-bottom: 30px;
     transition: all 0.5s;
- }       
+ }   
+ .headerLeft{
+  overflow: hidden;
+  background-color: #fff;
+  padding: 50px 10px 10px 10px;
+  font-family: "Times New Roman";
+  font-size: 200px;
+ }
 
-  /* .modal{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 200ns ease-in-out;
-    border: 1px solid black;
-    border-radius: 10px;
-    z-index: 10;
-    background-color: white;
-    width: 325px;
-    max-width: 35%;
+ h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
 
-  }
-  .modal.active{
-    transform: translate(-50%, -50%) scale(1);
-  }
-
-  .modal_header{
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid black;
-  }
-
-  .modal_header .title{
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
-  .modal_header .close_button{
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
-
-  .modal_body{
-    padding: 10px 15px;
-  }
-
-  #overlay{
-    position: fixed;
-    opacity: 0;
-    transition: 200ns ease-in-out;
-    top : 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0, .5);
-    pointer-events: none;
-  }
-  #overlay.active{
-    opacity: 1;
-    pointer-events: all;
-  } */
-
-  :root {
-    --modal-duration: 1s;
-    --modal-color: #428bca;
-  }
-  
-  /* body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f4f4;
-    font-size: 17px;
-    line-height: 1.6;
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-  }
-   */
-  .modal-button {
-    background: #428bca;
-    padding: 1em 2em;
-    color: #fff;
-    border: 0;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .modal-button:hover {
-    background: #3876ac;
-  }
-  
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal-content {
-    margin: 10% auto;
-    width: 60%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-    animation-name: modalopen;
-    animation-duration: var(--modal-duration);
-  }
-  
-  .modal-header h2,
-  .modal-footer h3 {
-    margin: 0;
-  }
-  
-  .modal-header {
-    background: var(--modal-color);
-    padding: 15px;
-    color: #fff;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-  
-  .modal-body {
-    padding: 10px 20px;
-    background: #fff;
-  }
-  
-  .modal-footer {
-    background: var(--modal-color);
-    padding: 10px;
-    color: #fff;
+.box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
     text-align: center;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #999;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
   }
-  
-  .close {
-    color: #ccc;
-    float: right;
-    font-size: 30px;
-    color: #fff;
-    float: left;
+  .popup{
+    width: 70%;
   }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  @keyframes modalopen {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+}
+
+
+
+
   

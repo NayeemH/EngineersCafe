@@ -1,3 +1,5 @@
+
+
 <html lang="en">
 
 <head>
@@ -8,6 +10,7 @@
     <link rel="shortcut icon" href="img/E-3.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
 </head>
@@ -16,7 +19,7 @@
 
     <div class="content">
 
-        <!-- header area -->
+        <!-- header area start from here -->
         <div class="header">
             <div class="row">
                 <div class="col-md-3">
@@ -37,7 +40,7 @@
         <!-- navigation area -->
 
         <div class="navbar">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="#"><img src="img/E-3.png" class="rounded mx-auto d-block"
                         alt="EngineersCafe" width="50" height="50"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -49,7 +52,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -81,22 +84,22 @@
                                 <a class="dropdown-item" href="english.php">English</a>
                                 <a class="dropdown-item" href="bangla.php">Bangla</a>
                                 <a class="dropdown-item" href="gk.php">General Knowledge</a>
-                                <a class="dropdown-item" href="others">Others</a>
+                                <a class="dropdown-item" href="Others.php">Others</a>
                                 <!-- <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a> -->
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Interview</a>
+                            <a class="nav-link" href="underconstruction.html">Interview</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Online Test</a>
+                            <a class="nav-link" href="underconstruction.html">Online Test</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our Books</a>
+                            <a class="nav-link" href="underconstruction.html">Our Books</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="underconstruction.html">About</a>
                         </li>
 
 
@@ -125,75 +128,86 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td style="text-align: center">John</td>
+                                    <td style="text-align: center"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nihil? Numquam eveniet quas iste corporis aperiam enim mollitia, voluptatibus commodi!</a></td>
                                 </tr>
                                 <tr>
-                                    <td style="text-align: center">Mary</td>
+                                <td style="text-align: center"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nihil? Numquam eveniet quas iste corporis aperiam enim mollitia, voluptatibus commodi!</a></td>
                                 </tr>
                                 <tr>
-                                    <td style="text-align: center">July</td>
+                                <td style="text-align: center"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nihil? Numquam eveniet quas iste corporis aperiam enim mollitia, voluptatibus commodi!</a></td>
                                 </tr>
                                 <tr>
-                                    <td style="text-align: center">July</td>
+                                <td style="text-align: center"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nihil? Numquam eveniet quas iste corporis aperiam enim mollitia, voluptatibus commodi!</a></td>
                                 </tr>
                                 <tr>
-                                    <td style="text-align: center">July</td>
+                                <td style="text-align: center"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nihil? Numquam eveniet quas iste corporis aperiam enim mollitia, voluptatibus commodi!</a></td>
                                 </tr>
                                 <tr>
-                                    <td style="text-align: center">July</td>
+                                <td style="text-align: center"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nihil? Numquam eveniet quas iste corporis aperiam enim mollitia, voluptatibus commodi!</a></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
 
+
+            <!-- fetching data from database -->
                 <div class="col-md-6">
                     <div class="question border border-success">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sed necessitatibus quidem
-                            dolorem dolores quo tenetur blanditiis, quas dicta quaerat dignissimos totam unde
-                            perspiciatis rem, itaque explicabo eaque voluptas sunt molestias distinctio, a minus atque
-                            hic repellat? Quidem placeat deleniti soluta dolorem cumque laboriosam cupiditate
-                            dignissimos necessitatibus fugit harum adipisci animi voluptas veritatis qui a optio, facere
-                            quae officia officiis sunt architecto repellendus. Sunt ipsum dignissimos numquam laboriosam
-                            facere neque a corporis quam tempore et aspernatur perspiciatis, autem aperiam dicta.</p>
-                        <button id="modal-btn" class="modal-button">Click Here</button>
-
-                        <div id="my-modal" class="modal">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <span class="close">&times;</span>
-                                    <h2>Modal Header</h2>
-                                </div>
-                                <div class="modal-body">
-                                    <p>This is my modal</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus nisi,
-                                        sunt consectetur ipsa velit
-                                        repudiandae aperiam modi quisquam nihil nam asperiores doloremque mollitia dolor
-                                        deleniti quibusdam nemo
-                                        commodi ab.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <h3>Modal Footer</h3>
-                                </div>
+                        <div class="card float-right" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
                             </div>
                         </div>
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <div class="card float-left" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                        <div class="card float-right" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                        <div class="card float-left" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                        <div class="card float-right" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                        <div class="card float-left" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -245,10 +259,10 @@
                         <div class="icon_holder">
                             <h4 class="text-center">Contact Us</h4>
                             <div class="icons">
-                                <img src="img/icon/android.png" alt="" class="img-thumbnail" height="40" width="40">
-                                <img src="img/icon/fb.png" alt="" class="img-thumbnail" height="40" width="40">
-                                <img src="img/icon/youtube.png" alt="" class="img-thumbnail" height="40" width="40">
-                                <img src="img/icon/linkedin.png" alt="" class="img-thumbnail" height="40" width="40">
+                                <a href="https://www.facebook.com/"><img src="img/icon/android.png" alt="" class="img-thumbnail" height="40" width="40"></a>
+                                <a href="https://www.facebook.com/"><img src="img/icon/fb.png" alt="" class="img-thumbnail" height="40" width="40"></a>
+                                <a href="https://www.youtube.com/"><img src="img/icon/youtube.png" alt="" class="img-thumbnail" height="40" width="40"></a>
+                                <a href="https://www.linkedin.com/"><img src="img/icon/linkedin.png" alt="" class="img-thumbnail" height="40" width="40"></a>
                                 <img src="img/icon/twitter.png" alt="" class="img-thumbnail" height="40" width="40">
                                 <img src="img/icon/google-plus.png" alt="" class="img-thumbnail" height="40" width="40">
 

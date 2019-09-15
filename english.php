@@ -11,8 +11,9 @@
         // echo "ok";
     }
 
-    $query = "SELECT * FROM question WHERE sector = 'English' ORDER BY question_id LIMIT 15 ";
+    $query = "SELECT * FROM question WHERE sector = 'English' ORDER BY question_id LIMIT 4 ";
     $result = $mysqli->query($query);
+    
 
 ?>
 
@@ -26,6 +27,7 @@
     <link rel="shortcut icon" href="img/E-3.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
 </head>
@@ -67,7 +69,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -105,16 +107,16 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Interview</a>
+                            <a class="nav-link" href="underconstruction.html">Interview</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Online Test</a>
+                            <a class="nav-link" href="underconstruction.html">Online Test</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our Books</a>
+                            <a class="nav-link" href="underconstruction.html">Our Books</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="underconstruction.html">About</a>
                         </li>
 
 
@@ -143,22 +145,22 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td style="text-align: center">John</td>
+                                    <td style="text-align: center"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nihil? Numquam eveniet quas iste corporis aperiam enim mollitia, voluptatibus commodi!</a></td>
                                 </tr>
                                 <tr>
-                                    <td style="text-align: center">Mary</td>
+                                <td style="text-align: center"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nihil? Numquam eveniet quas iste corporis aperiam enim mollitia, voluptatibus commodi!</a></td>
                                 </tr>
                                 <tr>
-                                    <td style="text-align: center">July</td>
+                                <td style="text-align: center"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nihil? Numquam eveniet quas iste corporis aperiam enim mollitia, voluptatibus commodi!</a></td>
                                 </tr>
                                 <tr>
-                                    <td style="text-align: center">July</td>
+                                <td style="text-align: center"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nihil? Numquam eveniet quas iste corporis aperiam enim mollitia, voluptatibus commodi!</a></td>
                                 </tr>
                                 <tr>
-                                    <td style="text-align: center">July</td>
+                                <td style="text-align: center"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nihil? Numquam eveniet quas iste corporis aperiam enim mollitia, voluptatibus commodi!</a></td>
                                 </tr>
                                 <tr>
-                                    <td style="text-align: center">July</td>
+                                <td style="text-align: center"><a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nihil? Numquam eveniet quas iste corporis aperiam enim mollitia, voluptatibus commodi!</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -173,7 +175,12 @@
                         <?php
                             while($row = $result->fetch_assoc())
                             {
-                                
+                                // $question = $row['question'];
+                                // $option_a = $row['option_a'];
+                                // $option_b = $row['option_b'];
+                                // $option_c = $row['option_c'];
+                                // $option_d = $row['option_d'];
+                                // $answer = $row['answer'];
                                 //echo $row['question_id'].'<br>';
                                 echo '<br><h4>Question:: </h4>'.$row['question'].'<br>'; ?>
                                 <table class="table table-dark">
@@ -190,11 +197,23 @@
                                         <td>
                                             <?php echo '<h6>Option D: </h6>'.$row['option_d']; ?>
                                         </td>
-                                        <td>
-                                            <?php echo '<h6>Answer: </h6>'.$row['answer']; ?>
-                                        </td>
+                                        
                                     </tr>
                                 </table>
+                                <div class="box">
+                                    <a class="button" href="#popup1">Answer</a>
+                                </div>
+
+                                <div id="popup1" class="overlay">
+                                    <div class="popup">
+                                    <?php echo '<h2>Question:: '.$row['question'].'</h2><br>'; ?>
+                                        <a class="close" href="#">&times;</a>
+                                        <div class="content">
+                                            <!-- <h3>Answer</h3><br> -->
+                                            <?php echo '<h3>Answer:'.$row['answer'].'</h3>'; ?>
+                                        </div>
+                                    </div>
+                                </div>
                         <?php    
                             }
                         ?>
